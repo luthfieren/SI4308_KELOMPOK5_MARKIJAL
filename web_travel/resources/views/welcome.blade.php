@@ -57,52 +57,77 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-
-<div class="container mt-5">
-    <div class="card">
-        <div class="card-header d-flex justify-content-between align-items-center">
-            <span>
-                Paket Tersedia
-            </span>
-            <span>
-                <a href="{{ route('paket.index') }}" class="btn btn-primary">View More</a>
-            </span>
-        </div>
-        <div class="card-body row align-items-center">
-            @foreach ($packages as $item)
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="{{ Storage::url($item->category->foto) }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ $item->nama_paket }}</h5>
-                        <p class="card-text">{{ $item->tujuan }}</p>
-                        <p class="card-text">
-                            Stok Tersedia : <span class="text-danger">{{ $item->stok }}</span>
-                        </p>
-                        <p>
-                            Destinasi : {{$item->tujuan}}
-                        </p>
-                    </div>
-                    <div class="card-footer d-flex align-items-center justify-content-between">
-                        @auth
-                        @if ($item->stok == 0)
-                        <button class="btn btn-primary" disabled>Stok Habis</button>
-                        @else
-                        <a href="{{ route('paket.show', $item->id) }}" class="btn btn-outline-primary">Detail</a>
-                        <form action="{{ route('paket.create') }}" method="get">
-                            <input type="hidden" name="paket_id" value="{{ $item->id }}">
-                            <button class="btn btn-primary">Beli Sekarang</button>
-                        </form>
-                        @endif
-                        @endauth
-                        @guest
-                        <a href="{{ route('login') }}" class="btn btn-primary">Login</a>
-                        @endguest
-                    </div>
-                </div>
+<div class="container-fluid" style="height: 500px;;">
+    <div class="row align-items-center" style="width: 50%; margin-left: auto; margin-right: auto;">
+        <div class="col" style="text-align: center; margin-top: 50px; color: white;">
+            <h2 style="height: 50px; color:black;">MARKIJAL by Fateh Tour</h2>
+            <div class="logo" style="margin-top: 50px;">
+                <img src="https://i.postimg.cc/RCPDsjpd/markijal-logo.png" alt="" width="auto" height="250px">
             </div>
-            @endforeach
+            <div class=" info" style="margin-top: 50px; color:black;">
+                <p> EVOS Esports sebelumnya dikenal sebagai Zero Latitude, adalah organisasi esport profesional yang
+                    berbasis di Jakarta, Indonesia yang didirikan oleh Ivan Yeo dan dipegang kendali oleh Bisma Aditya
+                    Putra sebagai Chief Executive Officer
+                    (CEO) di Indonesia. Juga pernah memiliki tim kompetitif di ranah Mobile Legends: Bang Bang, Arena of
+                    Valor, Free Fire, League of Legends, PlayerUnknown's Battlegrounds.</p>
+            </div>
         </div>
     </div>
-</div>
-@endsection
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>
+                    Paket Tersedia
+                </span>
+                <span>
+                    <a href="{{ route('paket.index') }}" class="btn btn-primary">View More</a>
+                </span>
+            </div>
+            <div class="card-body row align-items-center">
+                @foreach ($packages as $item)
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="{{ Storage::url($item->category->foto) }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $item->nama_paket }}</h5>
+                            <p class="card-text">{{ $item->tujuan }}</p>
+                            <p class="card-text">
+                                Stok Tersedia : <span class="text-danger">{{ $item->stok }}</span>
+                            </p>
+                            <p>
+                                Destinasi : {{$item->tujuan}}
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            @auth
+                            @if ($item->stok == 0)
+                            <button class="btn btn-primary" disabled>Stok Habis</button>
+                            @else
+                            <a href="{{ route('paket.show', $item->id) }}" class="btn btn-outline-primary">Detail</a>
+                            <form action="{{ route('paket.create') }}" method="get">
+                                <input type="hidden" name="paket_id" value="{{ $item->id }}">
+                                <button class="btn btn-primary">Beli Sekarang</button>
+                            </form>
+                            @endif
+                            @endauth
+                            @guest
+                            <a href="{{ route('login') }}" class="btn btn-primary">Login</a>
+                            @endguest
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+        <div id="container" style="text-align: center; margin-top: 100px;">
+            <div id="header">
+                <h2 style="color: black;">COME FIND US</h2>
+            </div>
+            <div id="map-container-google-2" class="z-depth-1-half map-container" style="margin-top: 50px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.068873121025!2d106.99837921108399!3d-6.2284581179510266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57a7f37c97da7b54!2sFateh%20Tours!5e0!3m2!1sen!2sid!4v1641720610810!5m2!1sen!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    @endsection

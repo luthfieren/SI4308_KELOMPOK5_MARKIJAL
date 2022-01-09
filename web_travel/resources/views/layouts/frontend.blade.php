@@ -11,7 +11,7 @@
 
 <body>
     {{-- navbar --}}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="https://i.postimg.cc/RCPDsjpd/markijal-logo.png" alt=""
                     style="max-width: 100px;"></a>
