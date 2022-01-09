@@ -64,127 +64,91 @@
     @yield('content')
 
     {{-- footer --}}
-    <footer class="text-center text-black" style="text-align:center; position:relative; bottom:0; width:100%; height: 250px; background-color:rgb(247,247,247); margin-top: 50px; background-color: rgba(0, 0, 0, 0.2);">
-    
-    <div class="container p-4">
-    <!--Grid row-->
-    <div class="row">
-      <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">MARKIJAL by Fateh Tour</h5>
+    <footer class="text-center text-black"
+        style="text-align:center; position:relative; bottom:0; width:100%; background-color: rgba(0, 0, 0, 0.2); margin-top:50px;">
 
-        <p>
-</br> Markijal adalah Website yang mempunya induk perusahaan FATEH TOUR 
-          yang berlokasi di Bekasi, IND. MARKIJAL memberikann kemudahan bagi user
-          yang ingin berpergian ke mana pun yang ingin dituju. Nikmati MARKIJAL
-          dengan UI yang mudah dan menarik !!!
-        </p>
-      </div>
-      <!--Grid column-->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">MARKIJAL by Fateh Tour</h5>
 
-      <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <p>
+                        </br> Markijal adalah Website yang mempunya induk perusahaan FATEH TOUR
+                        yang berlokasi di Bekasi, IND. MARKIJAL memberikann kemudahan bagi user
+                        yang ingin berpergian ke mana pun yang ingin dituju. Nikmati MARKIJAL
+                        dengan UI yang mudah dan menarik !!!
+                    </p>
+                </div>
+                <!--Grid column-->
 
-      <iframe src="https://www.youtube.com/embed/KhccjEwKsyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
 
-      </div>
-      <!--Grid column-->
-    </div>
-    <!--Grid row-->
-  </div>
-  <!-- Grid container -->
+                    <iframe src="https://www.youtube.com/embed/KhccjEwKsyU" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
 
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!-- Section: Images -->
-    <section class="">
-      <div class="row">
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-          <div
-            class="bg-image hover-overlay ripple shadow-1-strong rounded"
-            data-ripple-color="light"
-          >
-            <img
-              src="https://wallpapercave.com/wp/wp9829655.jpg"
-              class="w-100"
-            />
-            
-          </div>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
         </div>
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-          <div
-            class="bg-image hover-overlay ripple shadow-1-strong rounded"
-            data-ripple-color="light"
-          >
-            <img
-              src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
-              class="w-100"
-            />
-            
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-          <div
-            class="bg-image hover-overlay ripple shadow-1-strong rounded"
-            data-ripple-color="light"
-          >
-            <img
-              src="https://travelumroh.co.id/wp-content/uploads/2021/03/10.-Ketahui-Perbedaan-Haji-dan-Umroh-Sebelum-Menunaikannya.jpg"
-              class="w-100"
-            />
-            
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-          <div
-            class="bg-image hover-overlay ripple shadow-1-strong rounded"
-            data-ripple-color="light"
-          >
-            <img
-              src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
-              class="w-100"
-            />
-            
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-          <div
-            class="bg-image hover-overlay ripple shadow-1-strong rounded"
-            data-ripple-color="light"
-          >
-            <img
-              src="https://wallpaperaccess.com/full/1408398.jpg"
-              class="w-100"
-            />
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-          <div
-            class="bg-image hover-overlay ripple shadow-1-strong rounded"
-            data-ripple-color="light"
-          >
-            <img
-              src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
-              class="w-100"
-            />
-            <a href="#!">
-              
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section: Images -->
-  </div>
-  <!-- Grid container -->
+        <!-- Grid container -->
 
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright:
-    <a class="text-white" href="#">MARKIJAL Web</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Images -->
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="https://wallpapercave.com/wp/wp9829655.jpg" class="w-100" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp" class="w-100" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="https://travelumroh.co.id/wp-content/uploads/2021/03/10.-Ketahui-Perbedaan-Haji-dan-Umroh-Sebelum-Menunaikannya.jpg"
+                                class="w-100" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp" class="w-100" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="https://wallpaperaccess.com/full/1408398.jpg" class="w-100" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                        <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp" class="w-100" />
+                            <a href="#!">
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Images -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="#">MARKIJAL Web</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
 
     <script src="{{ asset('js/app.js') }}"></script>
