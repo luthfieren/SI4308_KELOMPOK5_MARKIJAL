@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MARKIJAL Web</title>
+    <title>MARKIJAL</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
@@ -13,8 +13,8 @@
     {{-- navbar --}}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="https://i.postimg.cc/RCPDsjpd/markijal-logo.png" alt=""
-                    style="max-width: 100px;"></a>
+            <a class="navbar-brand" href="{{ url('/') }}"><img src="https://i.postimg.cc/RCPDsjpd/markijal-logo.png"
+                    alt="" style="max-width: 100px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -78,7 +78,7 @@
                         </br> Markijal adalah Website yang mempunya induk perusahaan FATEH TOUR
                         yang berlokasi di Bekasi, IND. MARKIJAL memberikann kemudahan bagi user
                         yang ingin berpergian ke mana pun yang ingin dituju. Nikmati MARKIJAL
-                        dengan UI yang mudah dan menarik !!!
+                        dengan UI yang mudah dan menarik.
                     </p>
                 </div>
                 <!--Grid column-->
@@ -144,8 +144,9 @@
 
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2022 Copyright:
-            <a class="text-white" href="#">MARKIJAL Web</a>
+            © 2022 Copyright
+            <a class="text-white" href="#"><img src="https://i.postimg.cc/RCPDsjpd/markijal-logo.png" alt=""
+                    style="max-width: 100px;"></a>
         </div>
         <!-- Copyright -->
     </footer>

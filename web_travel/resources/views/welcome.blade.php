@@ -15,7 +15,7 @@
             <img src="https://travelumroh.co.id/wp-content/uploads/2021/03/10.-Ketahui-Perbedaan-Haji-dan-Umroh-Sebelum-Menunaikannya.jpg"
                 class="d-block w-100" alt="..." style="opacity: 0.5; height: 1080px;">
             <div class="carousel-caption d-none d-md-block" style="opacity: 1;">
-                <h5>HAJI STANDARD</h5>
+                <h5>HAJI</h5>
                 <p>HAJI merupakan jenis ibadah yang dilakukan oleh umat muslim. Ibadah haji didahului oleh puasa asyura
                     yang jatuh pada tanggal 10 dzulhijjah. Lama waktu ibadah haji adalah sekitar 40 hari sehingga banyak
                     calon jamaah yang memilih agen travel untuk mengurus perjalanan mereka. Berikut beberapa contoh
@@ -65,11 +65,10 @@
                 <img src="https://i.postimg.cc/RCPDsjpd/markijal-logo.png" alt="" width="auto" height="250px">
             </div>
             <div class=" info" style="margin-top: 50px; color:black;">
-                <p> EVOS Esports sebelumnya dikenal sebagai Zero Latitude, adalah organisasi esport profesional yang
-                    berbasis di Jakarta, Indonesia yang didirikan oleh Ivan Yeo dan dipegang kendali oleh Bisma Aditya
-                    Putra sebagai Chief Executive Officer
-                    (CEO) di Indonesia. Juga pernah memiliki tim kompetitif di ranah Mobile Legends: Bang Bang, Arena of
-                    Valor, Free Fire, League of Legends, PlayerUnknown's Battlegrounds.</p>
+                <p> Markijal adalah Website yang mempunya induk perusahaan FATEH TOURS
+                    yang berlokasi di Bekasi, Indonesia. MARKIJAL memberikann kemudahan bagi user
+                    yang ingin berpergian ke mana pun yang ingin dituju. Nikmati MARKIJAL
+                    dengan UI yang mudah dan menarik.</p>
             </div>
         </div>
     </div>
@@ -77,10 +76,10 @@
         <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <span>
-                    Paket Tersedia
+                    Our Latest Travel Offers
                 </span>
                 <span>
-                    <a href="{{ route('paket.index') }}" class="btn btn-primary">View More</a>
+                    <a href="{{ route('paket.index') }}" class="btn btn-primary">More Deals</a>
                 </span>
             </div>
             <div class="card-body row align-items-center">
@@ -106,7 +105,7 @@
                             <a href="{{ route('paket.show', $item->id) }}" class="btn btn-outline-primary">Detail</a>
                             <form action="{{ route('paket.create') }}" method="get">
                                 <input type="hidden" name="paket_id" value="{{ $item->id }}">
-                                <button class="btn btn-primary">Beli Sekarang</button>
+                                <button class="btn btn-primary">Book Now</button>
                             </form>
                             @endif
                             @endauth
