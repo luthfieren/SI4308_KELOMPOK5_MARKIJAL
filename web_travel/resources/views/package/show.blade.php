@@ -5,10 +5,10 @@
     <div class="card">
         <div class="card-header d-flex justify-content-between align-items-center">
             <span>
-                Item Detail
+                {{ $package->nama_paket }}
             </span>
             <span>
-                <a href="{{ route('paket.index') }}" class="btn btn-primary">Kembali</a>
+                <a href="{{ route('paket.index') }}" class="btn btn-primary">Back</a>
             </span>
         </div>
         <div class="card-body align-items-center justify-content-center">
@@ -28,6 +28,9 @@
                             <th>:</th>
                             <th>{{ $package->nama_paket }}</th>
                         </tr>
+                        <br>
+                        <br>
+                        <br>
                         <tr>
                             <th>Harga</th>
                             <th>:</th>
@@ -51,8 +54,10 @@
                         <tr>
                             <th>
                                 <form action="{{ route('paket.create') }}" method="get">
-                                    <input type="hidden" name="paket_id" value="{{ $package->id }}">
-                                    <button class="btn btn-primary">Book Now</button>
+                                    <div class="d-grid mx-auto">
+                                        <input type="hidden" name="paket_id" value="{{ $package->id }}">
+                                        <button class="btn btn-primary">Book Now</button>
+                                    </div>
                                 </form>
                             </th>
                         </tr>
@@ -67,7 +72,7 @@
     <div class="card">
         <div class="card-header d-flex justify-content-between align-items-center">
             <span>
-                Paket Terkait
+                Paket Terkait Dalam Kategori Ini
             </span>
         </div>
         <div class="card-body row align-items-center">
@@ -90,7 +95,7 @@
                         <a href="{{ route('paket.show', $item->id) }}" class="btn btn-outline-primary">Detail</a>
                         <form action="{{ route('paket.create') }}" method="get">
                             <input type="hidden" name="paket_id" value="{{ $item->id }}">
-                            <button class="btn btn-primary">Beli Sekarang</button>
+                            <button class="btn btn-primary">Book Now</button>
                         </form>
                         @endauth
                         @guest

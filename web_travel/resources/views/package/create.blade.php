@@ -76,26 +76,42 @@
 </div>
 
 <script>
-    let jumlah = document.getElementById('jumlah')
-      let total = document.getElementById('total')
-      let btn = document.getElementById('btnSubmit')
-      let error = document.getElementById('error')
-      if (jumlah.value > {{ $package->stok }}) {
-              btn.setAttribute('disabled', true)
-              error.textContent = '*Jumlah melebihi stok paket'
-          }
+let jumlah = document.getElementById('jumlah')
+let total = document.getElementById('total')
+let btn = document.getElementById('btnSubmit')
+let error = document.getElementById('error')
+if (jumlah.value > {
+        {
+            $package - > stok
+        }
+    }) {
+    btn.setAttribute('disabled', true)
+    error.textContent = '*Jumlah melebihi stok paket'
+}
 
-          total.value = jumlah.value * {{ $package->harga_satuan }}
+total.value = jumlah.value * {
+    {
+        $package - > harga_satuan
+    }
+}
 
-          jumlah.addEventListener('keyup', (e) => {
-          total.value = jumlah.value * {{ $package->harga_satuan }}
-          if (jumlah.value > {{ $package->stok }}){
-            btn.setAttribute('disabled', true)
-              error.textContent = '*Jumlah melebihi stok paket'
-          }else{
-            btn.removeAttribute('disabled')
-              error.textContent = ''
-          }
-      })
+jumlah.addEventListener('keyup', (e) => {
+    total.value = jumlah.value * {
+        {
+            $package - > harga_satuan
+        }
+    }
+    if (jumlah.value > {
+            {
+                $package - > stok
+            }
+        }) {
+        btn.setAttribute('disabled', true)
+        error.textContent = '*Jumlah melebihi stok paket'
+    } else {
+        btn.removeAttribute('disabled')
+        error.textContent = ''
+    }
+})
 </script>
 @endsection

@@ -65,7 +65,9 @@
                 <img src="https://i.postimg.cc/RCPDsjpd/markijal-logo.png" alt="" width="auto" height="250px">
             </div>
             <div class=" info" style="margin-top: 50px; color:black;">
-                <p> MARKIJAL BY FATEH TOUR, adalah anak perusahaan FATEH TOUR yang berkantor pusat di kota Bekasi. Berdiri tahun 2017, perusahaan ini khusus bergerak di bidang Travel&Umrah. MARKIJAL memberikann kemudahan bagi user yang ingin berpergian ke mana pun yang ingin dituju.</p>
+                <p> MARKIJAL BY FATEH TOUR, adalah anak perusahaan FATEH TOUR yang berkantor pusat di kota Bekasi.
+                    Berdiri tahun 2017, perusahaan ini khusus bergerak di bidang Travel & Umrah. MARKIJAL memberikan
+                    kemudahan bagi user yang ingin berpergian ke mana pun yang ingin dituju.</p>
             </div>
         </div>
     </div>
